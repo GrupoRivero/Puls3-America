@@ -135,13 +135,15 @@ nav #publicar_nav
 }
 nav #publicar_nav:after
 {
-	color: rgba(255,255,255,0.5);
+	
+	color: rgba(250, 250, 250, .5);
 	content:  "\e004";
 	font-family: "icomoon";
 	font-size: 1.8em;
-	position: absolute;
+	position: absolute;	
 	right: 0;
-	top: 0;
+	top: 0;							
+	
 }
 nav #publicar_nav a
 {
@@ -239,10 +241,36 @@ nav #publicar_nav a
 {
 	background: white;
 	border-radius: 0 0 0.5em 0.5em;
-	border: 2px solid red;
+	
 	margin: :3px 0 0 0;
 	padding: 0.5em 0;
 	position: absolute;
 	text-align: center;
 	width: 96px;
+}
+#contenido .item .votacion a
+{
+	text-decoration: none;
+}
+
+#contenido .item .votacion .down:after,
+#contenido .item .votacion .up:after
+{
+	font-family: "icomoon";
+	font-size: 1.5em;
+	display:bottom;
+}
+
+#contenido .item .votacion .down:after
+{
+	content: "\e001";
+	color: red;
+	
+}
+
+#contenido .item .votacion .up:after
+{
+	content: "\e002";
+	color: green;
+	
 }
